@@ -27,6 +27,14 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 	
+	<repositories>
+	 <repository>
+	      <id>nexus</id>
+	      <name>nexus proxy Repo</name>
+	      <url>http://172.31.90.66:8180/repository/tesla-proxy/</url> 
+	    </repository>
+	</repositories>
+	
 	<dependencies>
 		
 		<dependency>
@@ -96,13 +104,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://44.211.123.33:8180/repository/tesla-releases/</url> 
+	      <url>http://172.31.90.66:8180/repository/tesla-releases/</url> 
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://44.211.123.33:8180/repository/tesla-snapshots/</url>
+	      <url>http://172.31.90.66:8180/repository/tesla-snapshots/</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	
